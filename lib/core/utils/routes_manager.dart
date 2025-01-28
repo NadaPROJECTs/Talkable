@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:savvyflos/presentation/screens/educationScreen/education_screen.dart';
+import 'package:savvyflos/presentation/screens/educationScreen/educationscreen.dart';
 import 'package:savvyflos/presentation/screens/home/home.dart';
 import 'package:savvyflos/presentation/screens/login/login.dart';
 import 'package:savvyflos/presentation/screens/splash/splash_screen.dart';
+import 'package:savvyflos/presentation/screens/translationScreen/translaionedit.dart';
 import 'package:savvyflos/presentation/screens/translationScreen/translation.dart';
 
 class RoutesManager {
@@ -27,11 +29,11 @@ class RoutesManager {
         return MaterialPageRoute(builder: (context) =>  HomeScreen());
 
       case translation :
-        return MaterialPageRoute(builder: (context) =>  HomePage());
+        return MaterialPageRoute(builder: (context) =>  HomePage2());
 
 
       case education :
-        return MaterialPageRoute(builder: (context) =>  educationScreen());
+        return MaterialPageRoute(builder: (context) =>  EducationScreen());
 
 
 
