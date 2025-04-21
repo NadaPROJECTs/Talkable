@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:savvyflos/core/cashe/prefs_handler.dart';
 import 'package:savvyflos/core/utils/assets_manager.dart';
 import 'package:savvyflos/core/utils/colors_manager.dart';
 import 'package:savvyflos/core/utils/routes_manager.dart';
@@ -11,6 +12,14 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorsManager.White,
       appBar: AppBar(
+        actions: [
+          IconButton(onPressed: (){
+            PrefsHandler.clearToken();
+            Navigator.pushReplacementNamed(context, RoutesManager.signUp);
+          }, icon: Icon(
+            Icons.logout
+          ))
+        ],
 
         backgroundColor: ColorsManager.b2,
         title: Text('Home',style: TextStyle(fontWeight: FontWeight.w400,fontSize: 40 , ),),

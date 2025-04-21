@@ -16,12 +16,10 @@ class LoginScreen extends StatelessWidget {
           SizedBox(
             height: 150,
           ),
-
           Center(child: Image.asset(AssetsManager.logoPhoto,width: 120,height: 120,)),
           SizedBox(height: 70,),
-
           TextField(
-            decoration: InputDecoration(
+            decoration:  InputDecoration(
               hintText: "Email address or username  ",
               hintStyle: TextStyle(color: Color(0xFFFFFFFF)),
               enabledBorder:
@@ -31,7 +29,6 @@ class LoginScreen extends StatelessWidget {
                   )
               )
             ),
-
           ),
           SizedBox(height: 15,),
           TextField(
@@ -48,8 +45,6 @@ class LoginScreen extends StatelessWidget {
 
           ),
           SizedBox(height: 15,),
-
-
           ElevatedButton(
             style: ElevatedButton.styleFrom(
 

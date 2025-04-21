@@ -30,14 +30,30 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+#  clean_generator:  ^<latest_version_with_null_safety>
+    # add injectable to your dependencies
+  injectable:
+    # add get_it
+  get_it:
 
   carousel_slider: ^4.2.1
   http: ^1.1.0
+#  flutter_clean_architecture: ^6.0.1
+
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  dio: ^5.8.0+1
+  firebase_auth: ^4.16.0
+  dartz: ^0.10.1
+  connectivity_plus: ^5.0.2
+  flutter_bloc: ^9.1.0
+  fluttertoast: ^8.2.5
+  shared_preferences: ^2.2.3
+  pretty_dio_logger: ^1.4.0
+
 
 dev_dependencies:
   flutter_test:
@@ -49,6 +65,11 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+    # add the generator to your dev_dependencies
+  injectable_generator:
+# add build runner if not already added
+  build_runner:
+  flutter_gen:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
