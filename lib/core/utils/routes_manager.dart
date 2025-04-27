@@ -14,7 +14,7 @@ class RoutesManager {
   static const String login = "/LoginScreen";
   static const String signUp = "/SignUpPage";
   static const String translation = "/HomePage";
-  static const String education = "/education";
+  static const String education = "/EducationScreen";
 
 
 

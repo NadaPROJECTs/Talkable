@@ -76,7 +76,7 @@ class _SignUpPageState extends State<SignUpPage> {
     return ElevatedButton(
               onPressed: () {
                 print("ashraf 3===> ${phoneController.text}");
-                //Navigator.of(context).pushReplacementNamed(RoutesManager.login);
+                Navigator.of(context).pushReplacementNamed(RoutesManager.login);
                 BlocProvider.of<SignUpViewModelCubit>(context).signUp
                   (name: nameController.text,
                     phone_number: phoneController.text,
